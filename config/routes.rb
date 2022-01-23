@@ -6,4 +6,6 @@ Rails.application.routes.draw do
  root 'home#index'
 
   get 'result' => 'home#result'
+  post 'result' => 'home#result'
+  get '/plus/:n1/:n2' => 'home#result'
 end
